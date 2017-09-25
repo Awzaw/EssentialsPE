@@ -1044,7 +1044,6 @@ class BaseAPI{
                 if($slot !== $index){
                     $item->setCount($item->getCount() + $i->getCount());
                     $items[$index] = $replace;
-                    var_dump($index . " - " . $slot);
                 }
             }
         }

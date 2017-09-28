@@ -36,7 +36,7 @@ class SetHome extends BaseCommand{
         if(strtolower($args[0]) === "bed"){
             $sender->sendMessage(TextFormat::RED . "[Error] You can only set a \"bed\" home by sleeping in a bed");
             return false;
-        }elseif(trim($args[0] === "")){
+        }elseif(trim($args[0]) === ""){
             $sender->sendMessage(TextFormat::RED . "[Error] Please provide a Home name");
             return false;
         }

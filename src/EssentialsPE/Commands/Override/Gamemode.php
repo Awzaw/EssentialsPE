@@ -115,7 +115,7 @@ class Gamemode extends BaseOverrideCommand{
         }
         $gmString = $this->getAPI()->getServer()->getGamemodeString((int) $gm);
         if($player->getGamemode() === $gm){
-            $sender->sendMessage(TextFormat::RED . "[Error] " . ($player === $sender ? "You're" : $player->getDisplayName() . " is") . " already in " . $gmstring);
+            $sender->sendMessage(TextFormat::RED . "[Error] " . ($player === $sender ? "You're" : $player->getDisplayName() . " is") . " already in " . $gmString);
             return false;
         }
         $player->setGamemode((int) $gm);

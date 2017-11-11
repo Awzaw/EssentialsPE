@@ -1248,8 +1248,8 @@ class BaseAPI{
 
     /** @var array */
     private $quickReply = [
-        "console" => false,
-        "rcon" => false
+        "console" => null,
+        "rcon" => null
     ];
 
     /**
@@ -1291,7 +1291,7 @@ class BaseAPI{
         if($sender instanceof Player){
             $this->getSession($sender)->removeQuickReply();
         }else{
-            $this->quickReply[strtolower($sender->getName())] = false;
+            $this->quickReply[strtolower($sender->getName())] = null;
         }
     }
 

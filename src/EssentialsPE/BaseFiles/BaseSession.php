@@ -383,8 +383,8 @@ class BaseSession{
      *              |___/
      */
 
-    /** @var bool|string */
-    private $quickReply = false;
+    /** @var null|string */
+    private $quickReply = null;
 
     /**
      * @return null|string
@@ -401,7 +401,7 @@ class BaseSession{
     }
 
     public function removeQuickReply(): void{
-        $this->quickReply = false;
+        $this->quickReply = null;
     }
 
     /**  __  __       _
